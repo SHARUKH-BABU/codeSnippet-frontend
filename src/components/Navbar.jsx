@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between h-14'>
 
-        <h1 className='font-bold text-2xl'> Code Snippets </h1>
+        <h1 className='font-bold text-2xl'>Code-Snippets</h1>
         {/* <button>Logout</button> */}
     </div>
   )
