@@ -20,10 +20,7 @@ const CreateSnippet = () => {
   const createSnippet = async (e) => {
     e.preventDefault();
     const res = await axios.post("https://cs-bknd-snippet.vercel.app/api/v1/snippet/", { title, code });
-    setSnippets((prevSnippets) => ({
-      ...prevSnippets,
-      [res.data.id]: res.data.snippet,
-    }));
+    fetchSnippets();
     setTitle('');
     setCode('');
   }
